@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StopWatch</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="todo">TODO</string>
+    <string name="empty_string">Enter Here</string>
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="h">H</string>
+</resources>

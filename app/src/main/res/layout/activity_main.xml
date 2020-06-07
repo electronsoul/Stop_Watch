@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/egg_back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/egg" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:alpha="0" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_time"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/empty_string"
+                android:importantForAutofill="no"
+                android:inputType="numberSigned" />
+
+            <Button
+                android:id="@+id/unit_selector"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:onClick="change_unit"
+                android:text="@string/s" />
+
+            <Button
+                android:id="@+id/start_stop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="start_timer"
+                android:text="@string/start" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
